@@ -1,4 +1,13 @@
+/* Importando archivos SMACSS */
+// Base
+@import './base/base';
+// Layout
+@import './layout/footer';
+
 /* Hoja de estilos del sitio */
+.home {
+    
+}
 
 .image::before {
     content: '';

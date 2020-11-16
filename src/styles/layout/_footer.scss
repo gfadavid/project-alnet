@@ -1,0 +1,13 @@
+.home__footer {
+    background-color: $black;
+    color: $white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &__text {
+        text-transform: uppercase;
+    }
+    &__logo {
+        width: 35px;
+        margin-top: -10px;
+    }
+}

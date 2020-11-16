@@ -1,0 +1,37 @@
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+/*
+    Methodology Used    : Mobile First
+    Breakpoints         : Bootstrap 4.5.3
+    Small (sm)          : 576px  = 36em
+    Medium (md)         : 768px  = 48em
+    Large (lg)          : 992px  = 62em
+    Extra Large (xl)    : 1200px = 75em
+
+    Extra extra large   : 1400px = 87.50em (Available as of Bootstrap 5)
+*/
+
+/* Breakpoint Medium */
+@media screen and (min-width: 48em) {
+
+    /*** Inicio "footer" (home) ***/
+    .home {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+        &__background {
+            height: calc(100vh - 55px);
+        }
+
+        &__footer {
+            margin-top: auto;
+            height: 55px;
+            padding: 0 40px;
+        }
+    }
+    /*** Fin "footer" (home) ***/
+
+}

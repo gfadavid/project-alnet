@@ -14,3 +14,4 @@ import './static/img/img-01.jpg';
 import './static/img/img-02.jpg';
 import './static/img/logo-alnet-serveis.png';
 import './static/img/logo-alnet-studio.png';
+import './static/img/logo-mk.png';
