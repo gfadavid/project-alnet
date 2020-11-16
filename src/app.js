@@ -7,4 +7,10 @@ import 'bootstrap/js/dist/alert';
 import './styles/styles.scss'; // Override a las variables por defecto de Bootstrap
 
 
-import './static/img/foto.jpg';
+// Importar imágenes
+
+// Home
+import './static/img/img-01.jpg';
+import './static/img/img-02.jpg';
+import './static/img/logo-alnet-serveis.png';
+import './static/img/logo-alnet-studio.png';
