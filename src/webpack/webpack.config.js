@@ -7,7 +7,7 @@ module.exports = {
     entry: './src/app.js', // Archivo que maneja la aplicación
 
     output: {
-        path: path.resolve(__dirname, '../../dist'), // La ruta que se va a generar
+        path: path.resolve(__dirname, '../../docs'), // La ruta que se va a generar
         filename: 'js/bundle.js' // Nombre de archivo que va a generar
     },
 
