@@ -16,6 +16,14 @@
 /* Breakpoint Medium */
 @media screen and (min-width: 48em) {
 
+    /*** Inicio "header" ***/
+    // .main-header {
+    //     &__logo {
+    //         width: 50%;
+    //     }
+    // }
+    /*** Fin "header" ***/
+
     /*** Inicio "footer" (home) ***/
     .home {
 
@@ -30,5 +38,17 @@
         }
     }
     /*** Fin "footer" (home) ***/
+
+}
+
+/* Breakpoint Large */
+@media screen and (min-width: 62em) {
+
+    /*** Inicio "grid" (mixins) ***/
+    .container-fluid {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    /*** Fin "grid" (mixins) ***/
 
 }

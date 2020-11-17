@@ -3,3 +3,22 @@
 @import '~bootstrap/scss/bootstrap';
 @import 'main';
 @import 'mediaqueries';
+
+// Override a Bootstrap (Para evitar modificar estilos centrales SASS del framework)
+
+// Componente "Navbar" (@import 'navbar')
+.navbar {
+    flex-wrap: nowrap;
+	padding: 0;
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+}
+
+.navbar-toggler {
+    padding: 0;
+    border: none; // remove default button 
+  }
