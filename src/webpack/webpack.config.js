@@ -61,12 +61,14 @@ module.exports = {
     },
 
     plugins: [
-        new HtmlWebpackPlugin({ // Genera el "index.html"
-            minify: false
-        }),
         new HtmlWebpackPlugin({
             filename: 'home-serveis.html', // Permite crear el archivo
             template: './src/home-serveis.html',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './src/index.html',
             minify: false
         }),
 
