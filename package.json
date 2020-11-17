@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && webpack --config src/webpack/webpack.config.js --mode=production",
+    "build": "rimraf docs && webpack --config src/webpack/webpack.config.js --mode=production",
     "start": "webpack serve --config src/webpack/webpack.config.js --mode=development"
   },
   "keywords": [],
