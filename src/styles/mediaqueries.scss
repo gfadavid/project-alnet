@@ -35,15 +35,15 @@
     /*** Fin Home ***/
 
     /*** Inicio "Servicios" (Serveis) ***/
-    .main {
-        &__content {
-            &__description {
-                .title--1 {
-                    padding-left: 10px; /* Número mágico */
-                }
-            }
-        }
-    }
+    // .main { No necesario
+    //     &__content {
+    //         &__description {
+    //             .title--1 {
+    //                 padding-left: 10px; /* Número mágico */
+    //             }
+    //         }
+    //     }
+    // }
 
     /* Inicio "slider" */
     .slider {
@@ -109,7 +109,7 @@
         &__content {
             &__description {
                 .title--1 {
-                    padding-left: 150px; /* Número mágico */
+                    padding-left: 100px; /* Número mágico */
                 }
             }
         }
