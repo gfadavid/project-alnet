@@ -71,6 +71,11 @@ module.exports = {
             template: './src/categoria-serveis.html',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'subcategoria-serveis.html', // Permite crear el archivo
+            template: './src/subcategoria-serveis.html',
+            minify: false
+        }),
         new MiniCSSExtractPlugin({
             filename: 'css/[name].css',
         })
