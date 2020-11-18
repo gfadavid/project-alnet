@@ -3,7 +3,10 @@
 @import './base/base';
 // Layout
 @import './layout/header';
+@import './layout/main';
 @import './layout/footer';
+// Module
+@import './module/titles&Subtitle';
 
 /* Hoja de estilos del sitio */
 .image::before {

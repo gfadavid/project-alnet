@@ -16,6 +16,14 @@
 /* Breakpoint Medium */
 @media screen and (min-width: 48em) {
 
+    /*** Inicio "body" ***/
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    /*** Fin "body" ***/
+
     /*** Inicio "header" ***/
     // .main-header {
     //     &__logo {
@@ -39,6 +47,18 @@
     }
     /*** Fin "footer" (home) ***/
 
+        /*** Inicio "Servicios" (Serveis) ***/
+        .main {
+            &__content {
+                &__description {
+                    .title--1 {
+                        padding-left: 10px; /* Número mágico */
+                    }
+                }
+            }
+        }
+        /*** Fin "Servicios" (Serveis) ***/
+
 }
 
 /* Breakpoint Large */
@@ -50,5 +70,36 @@
         padding-left: 50px;
     }
     /*** Fin "grid" (mixins) ***/
+
+    /*** Inicio "Servicios" (Serveis) ***/
+    .main {
+        &__content {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            &__description {
+                .title--1 {
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
+    /*** Fin "Servicios" (Serveis) ***/
+
+}
+
+/* Breakpoint Extra Large */
+@media screen and (min-width: 75em) {
+
+    /*** Inicio "Servicios" (Serveis) ***/
+    .main {
+        &__content {
+            &__description {
+                .title--1 {
+                    padding-left: 150px; /* Número mágico */
+                }
+            }
+        }
+    }
+    /*** Fin "Servicios" (Serveis) ***/
 
 }
