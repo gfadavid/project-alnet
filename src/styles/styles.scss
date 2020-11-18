@@ -27,3 +27,17 @@ body {
     padding: 0;
     border: none; // remove default button 
 }
+
+// Componente "Card"
+.card {
+    min-width: 100%; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+    border: none;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 0;
+}

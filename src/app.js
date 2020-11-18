@@ -15,3 +15,7 @@ import './static/img/img-02.jpg';
 import './static/img/logo-alnet-serveis.png';
 import './static/img/logo-alnet-studio.png';
 import './static/img/logo-mk.png';
+
+// Nosotros
+import './static/img/img-1.jpg';
+import './static/img/cargadores.png';

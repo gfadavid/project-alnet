@@ -10,4 +10,27 @@
             // background-color: lightgreen;
         }
     }
+    &__text {
+        margin-bottom: 1rem;
+        text-align: justify;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.values {
+    // background-color: teal;
+    &__item {
+        // background-color: pink;
+        svg {
+            width: 75px;
+            fill: $blue;
+        }
+        .card-title {
+            font-size: 30px;
+            margin-top: 15px; /* N[umero mágico */
+            margin-bottom: 30px; /* N[umero mágico */
+        }
+    }
 }
