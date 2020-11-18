@@ -62,8 +62,8 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'home-serveis.html', // Permite crear el archivo
-            template: './src/home-serveis.html',
+            filename: 'home-serveis(categoria).html', // Permite crear el archivo
+            template: './src/home-serveis(categoria).html',
             minify: false
         }),
         new HtmlWebpackPlugin({
