@@ -62,18 +62,17 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'home-serveis(categoria).html', // Permite crear el archivo
-            template: './src/home-serveis(categoria).html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html',
             minify: false
         }),
-
+        new HtmlWebpackPlugin({
+            filename: 'categoria-serveis.html', // Permite crear el archivo
+            template: './src/categoria-serveis.html',
+            minify: false
+        }),
         new MiniCSSExtractPlugin({
-            filename: 'css/[name].css'
+            filename: 'css/[name].css',
         })
     ]
 
