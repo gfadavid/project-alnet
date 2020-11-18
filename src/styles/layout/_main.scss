@@ -6,9 +6,9 @@
         // background-color: lightblue;
         padding-top: 15px;
         padding-bottom: 15px;
-        &__description {
-            // background-color: lightgreen;
-        }
+        // &__description {
+        //     // background-color: lightgreen;
+        // }
     }
     &__text {
         margin-bottom: 1rem;
@@ -17,6 +17,9 @@
             margin-bottom: 0;
         }
     }
+    // &__button {
+    //     margin-top: 15px;
+    // }
 }
 
 .values {

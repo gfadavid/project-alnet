@@ -436,7 +436,7 @@ $btn-line-height-lg:          $input-btn-line-height-lg !default;
 
 $btn-border-width:            $input-btn-border-width !default;
 
-$btn-font-weight:             $font-weight-normal !default;
+$btn-font-weight:             $font-weight-light !default;
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
@@ -448,11 +448,11 @@ $btn-link-disabled-color:     $gray-600 !default;
 $btn-block-spacing-y:         .5rem !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           $border-radius !default;
+$btn-border-radius:           none !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
 
-$btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+$btn-transition:              color .35s ease-in-out, background-color .35s ease-in-out, border-color .35s ease-in-out, box-shadow .35s ease-in-out !default;
 
 
 // Forms
