@@ -17,47 +17,61 @@
 @media screen and (min-width: 48em) {
 
     /*** Inicio "body" ***/
-    body {
+    body,
+    .wrapper {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
     }
     /*** Fin "body" ***/
 
-    /*** Inicio "header" ***/
-    // .main-header {
-    //     &__logo {
-    //         width: 50%;
-    //     }
-    // }
-    /*** Fin "header" ***/
-
-    /*** Inicio "footer" (home) ***/
+    /*** Inicio "Home" ***/
     .home {
 
         &__background {
             height: calc(100vh - 55px);
         }
-
-        &__footer {
-            margin-top: auto;
-            height: 55px;
-            padding: 0 40px;
-        }
     }
-    /*** Fin "footer" (home) ***/
+    /*** Fin Home ***/
 
-        /*** Inicio "Servicios" (Serveis) ***/
-        .main {
-            &__content {
-                &__description {
-                    .title--1 {
-                        padding-left: 10px; /* Número mágico */
-                    }
+    /*** Inicio "Servicios" (Serveis) ***/
+    .main {
+        &__content {
+            &__description {
+                .title--1 {
+                    padding-left: 10px; /* Número mágico */
                 }
             }
         }
-        /*** Fin "Servicios" (Serveis) ***/
+    }
+
+    /* Inicio "slider" */
+    .slider {
+        margin-top: 150px;
+    }
+    /* Fin "slider" */
+
+    /*** Fin "Servicios" (Serveis) ***/
+    
+    /*** Inicio "footer" ***/
+    .main-footer {
+        margin-top: auto;
+        &__contact {
+            height: 100px;
+            padding-top: 0;
+            padding-bottom: 0;
+            &__item__text {
+                color: $gray-700;
+                margin-left: 10px;
+            }
+        }
+        &__aboutus {
+            height: 55px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    /*** Fin "footer" ***/
 
 }
 

@@ -1,12 +1,13 @@
-.main {
-    background-color: lightcoral;
+.main,
+.wrapper {
+    // background-color: lightcoral;
     flex-grow: 1;
     &__content {
-        background-color: lightblue;
+        // background-color: lightblue;
         padding-top: 15px;
         padding-bottom: 15px;
         &__description {
-            background-color: lightgreen;
+            // background-color: lightgreen;
         }
     }
 }

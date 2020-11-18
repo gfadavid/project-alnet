@@ -6,6 +6,11 @@
 
 // Override a Bootstrap (Para evitar modificar estilos centrales SASS del framework)
 
+// Componente "_reboot"
+body {
+    font-weight: $font-weight-light;
+}
+
 // Componente "Navbar" (@import 'navbar')
 .navbar {
     flex-wrap: nowrap;
@@ -21,4 +26,4 @@
 .navbar-toggler {
     padding: 0;
     border: none; // remove default button 
-  }
+}
