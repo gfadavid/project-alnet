@@ -19,3 +19,9 @@ import './static/img/logo-mk.png';
 // Nosotros
 import './static/img/img-1.jpg';
 import './static/img/cargadores.png';
+
+// CAtegoría Interna
+import './static/img/img-media-1.jpg';
+import './static/img/img-media-2.jpg';
+import 'svg-url-loader!./static/svg/vineta.svg';
+// import './static/svg/vineta.svg';

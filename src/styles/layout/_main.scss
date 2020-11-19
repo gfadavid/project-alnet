@@ -9,6 +9,13 @@
         // &__description {
         //     // background-color: lightgreen;
         // }
+        .building {
+            width: 110px; /* Número mágico */
+            margin-bottom: 20px;
+            // .st0 {
+            //     fill: $gray-900;
+            // }
+        }
     }
     &__text {
         margin-bottom: 1rem;
@@ -25,15 +32,20 @@
 .values {
     // background-color: teal;
     &__item {
-        // background-color: pink;
+        background-color: pink;
         svg {
             width: 75px;
             fill: $blue;
         }
         .card-title {
             font-size: 30px;
-            margin-top: 15px; /* N[umero mágico */
-            margin-bottom: 30px; /* N[umero mágico */
+            margin-top: 15px; /* Número mágico */
+            margin-bottom: 30px; /* Número mágico */
         }
     }
+}
+
+.request {
+    background-color: $gray-200;
+    min-height: 470px;
 }

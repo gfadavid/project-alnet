@@ -34,7 +34,7 @@
     }
     /*** Fin Home ***/
 
-    /*** Inicio "Servicios" (Serveis) ***/
+    /*** Inicio "Main" (Serveis) ***/
     .main {
         &__content {
             &__description {
@@ -61,7 +61,7 @@
     }
     /* Fin "slider" */
 
-    /*** Fin "Servicios" (Serveis) ***/
+    /*** Fin "Main" (Serveis) ***/
 
     /*** Inicio "Nosotros" (Serveis) ***/
     .banner {
@@ -71,7 +71,7 @@
         }
     }
     /*** Fin "Nosotros" (Serveis) ***/
-    
+
     /*** Inicio "footer" ***/
     .main-footer {
         margin-top: auto;
@@ -117,6 +117,23 @@
         }
     }
     /*** Fin "Servicios" (Serveis) ***/
+
+    /*** Inicio "Media" (Serveis) ***/
+    .media {
+        margin-top: 160px;
+        .order-lg-1 {
+            .media__image {
+                padding-right: 0;
+                padding-left: 50px;
+                margin-bottom: 150px;
+            }
+        }
+        &__image {
+            margin-bottom: 0;
+            padding-right: 50px;
+        }
+    }
+    /*** Fin "Media" (Serveis) ***/
 
 }
 

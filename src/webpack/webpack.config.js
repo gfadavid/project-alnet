@@ -31,7 +31,7 @@ module.exports = {
                             outputPath: 'static/img',
                             useRelativePath: true
                         }
-                    },
+                    }
                     // { 
                     //     loader: 'image-webpack-loader',
                     //     options: {
@@ -57,6 +57,13 @@ module.exports = {
                     // },
                 ]
             }
+            // {
+            //     test: /\.svg/,
+            //     use: {
+            //         loader: 'svg-url-loader' // No está funcionando. En teoría permite incluír SVG desde los archivos de estilos.
+            //         // options: {}
+            //     }   
+            // }
         ]
     },
 

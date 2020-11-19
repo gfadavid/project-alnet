@@ -1,0 +1,40 @@
+.media {
+    // background-color: lightcoral;
+    margin-top: 15px;
+    &__image {
+        margin-bottom: 15px;
+    }
+    &__description {
+        // background-color: lightseagreen;
+        &__title {
+            // background-color: lime;
+            margin-bottom: 15px;
+        }
+        &__list {
+            // background-color: magenta;
+            padding-left: 30px; /* Número mágico (Alineación) */
+            margin-bottom: 0;
+            list-style: none;
+            text-align: justify;
+            &__item {
+                // background-color: maroon;
+                position: relative;
+                svg {
+                    width: 25px;
+                    position: absolute;
+                    top: 7.5px; /* Númer mágico */
+                    left: -30px;
+                    .st0 {
+                        fill: #159FA4;
+                    }
+                    .st1 {
+                        fill: #444545;
+                    }
+                }
+                &:nth-child(even) {
+                    // background-color: mediumseagreen;
+                }
+            }
+        }
+    }
+}
