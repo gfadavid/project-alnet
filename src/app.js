@@ -24,4 +24,4 @@ import './static/img/cargadores.png';
 import './static/img/img-media-1.jpg';
 import './static/img/img-media-2.jpg';
 import 'svg-url-loader!./static/svg/vineta.svg';
-// import './static/svg/vineta.svg';
+import 'svg-url-loader!./static/img/mapa.png';

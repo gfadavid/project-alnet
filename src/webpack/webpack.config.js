@@ -93,6 +93,11 @@ module.exports = {
             template: './src/categoria-interna-serveis.html',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'contacto-serveis.html', // Permite crear el archivo
+            template: './src/contacto-serveis.html',
+            minify: false
+        }),
         new MiniCSSExtractPlugin({
             filename: 'css/[name].css',
         })
