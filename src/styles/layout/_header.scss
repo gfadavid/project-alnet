@@ -1,7 +1,14 @@
 .main-header {
-    // background-color: pink;
-    height: 140px;
+    background-color: pink;
     border-bottom: 2px solid $gray-100;
+    &__home {
+        border-bottom: none;
+        nav {
+            position: absolute;
+            width: calc(100% - 100px);
+            z-index: 10;
+        }
+    }
     &__logo {
         // background-color: tomato;
         width: 50%;
@@ -10,5 +17,9 @@
         // background-color: violet;
         width: 40px; /* Número mágico */
         fill: $blue;
+    }
+    nav {
+        background-color: lightblue;
+        height: 140px;
     }
 }

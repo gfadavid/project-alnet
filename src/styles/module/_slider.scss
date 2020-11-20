@@ -1,3 +1,28 @@
+.main-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // height: 300px;
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($black,.5);
+        position: absolute;
+    }
+    img {
+        min-height: 100vh;
+    }
+    &__copy {
+        background-color: rgba(lightgreen,.75);
+        position: absolute;
+        left: 50px;
+        bottom: 50px;
+        width: 50%;
+    }
+}
+
 .slider {
     background-color: $blue;
     color: $white;
