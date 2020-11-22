@@ -76,6 +76,22 @@
                 padding-bottom: 20px;
             }
         }
+        &__social {
+            position: absolute;
+            z-index: 10;
+            right: 15px;
+            bottom: 21px; /* Alineación visual */
+            left: auto;
+            width: 25px;
+            height: 150px;
+            margin-top: 0;
+            &__item {
+                height: 25px; /* Altura de los piconos */
+            }
+            svg {
+                width: 25px;
+            }
+        }
     }
     /* Fin "main-slider" (Home) */
     /*** Fin Home ***/
@@ -170,6 +186,10 @@
             left: 50px;
             bottom: 50px;
             // width: 45%;
+        }
+        &__social {
+            right: 50px;
+            bottom: 56px; /* Alineación visual */
         }
     }
     /* Fin "main-slider" (Home) */

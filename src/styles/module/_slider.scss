@@ -6,7 +6,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background-color: rgba($black,.5);
+        background-color: rgba($black,.65);
         position: absolute;
     }
     &__copy {
@@ -20,6 +20,31 @@
             // background-color: mediumvioletred;
             color: $white;
             font-weight: $font-weight-light;
+        }
+    }
+    &__social {
+        // background-color: darkgoldenrod;
+        width: 125px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        margin-top: -30px;
+        &__item {
+            // background-color: darkmagenta;
+            height: 20px; /* Altura de los piconos */
+            line-height: 1;
+            &:nth-child(even) {
+                // background-color: firebrick;
+            }
+        }
+        svg {
+            width: 20px;
+            fill: white;
+            &:hover {
+                fill: $blue;
+                transition: all .3s;
+            }
         }
     }
 }
