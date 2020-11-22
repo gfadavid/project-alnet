@@ -134,6 +134,18 @@
     }
     /*** Fin "Nosotros" (Serveis) ***/
     
+    /*** Inicio "Nosotros" (Serveis) ***/
+    .values {
+        &__home {
+            padding-top: 130px;
+            padding-bottom: 130px;
+            &__item {
+                padding-top: 100px;
+            }
+        }
+    }
+    /*** Fin "Nosotros" (Serveis) ***/
+    
     /*** Inicio "Contacto" (Serveis) ***/
     .form {
         padding-top: 100px;

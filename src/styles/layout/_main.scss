@@ -43,6 +43,20 @@
             margin-bottom: 30px; /* Número mágico */
         }
     }
+    &__home {
+        // background-color: goldenrod;
+        padding-top: 15px;
+        &__item {
+            // background-color: hotpink;
+            .card-text {
+                margin-top: 20px; /* Número mágico */
+            }
+        }
+        svg {
+            width: 75px;
+            fill: $blue;
+        }
+    }
 }
 
 .request {
