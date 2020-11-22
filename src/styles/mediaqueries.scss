@@ -16,6 +16,31 @@
 /* Breakpoint Medium */
 @media screen and (min-width: 48em) {
 
+    /*** Inicio "Header" ***/
+    .main-header {
+        &__home {
+            border-bottom: none;
+            nav.navbar {
+                height: 140px;
+                // position: absolute;
+                // right: 0;
+                // left: 0;
+                // z-index: 10;
+                // width: calc(100% - 100px);
+            }
+            &__logo {
+                width: 50%;
+            }
+        }
+        &__logo {
+        }
+        &__icon {
+        }
+        nav {
+        }
+    }
+    /*** Inicio "Header" ***/
+
     /*** Inicio "body" ***/
     body,
     .wrapper {
@@ -27,11 +52,32 @@
 
     /*** Inicio "Home" ***/
     .home {
-
         &__background {
             height: calc(100vh - 55px);
         }
     }
+
+    /* Inicio "main-slider" (Home) */
+    .main-slider {
+        margin-top: -140px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // img {
+        //     min-height: 100vh;
+        // }
+        &__copy {
+            background-color: transparent;
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            width: 45%;
+            &__title {
+                padding-bottom: 20px;
+            }
+        }
+    }
+    /* Fin "main-slider" (Home) */
     /*** Fin Home ***/
 
     /*** Inicio "Main" (Serveis) ***/
@@ -99,6 +145,12 @@
     }
     /*** Fin "footer" ***/
 
+    /*** Inicio de Títulos & Subtítulos ***/
+    .title--1 {
+        font-size: $h1-font-size;
+    }
+    /*** Fin de Títulos & Subtítulos ***/
+
 }
 
 /* Breakpoint Large */
@@ -110,6 +162,18 @@
         padding-left: 50px;
     }
     /*** Fin "grid" (mixins) ***/
+
+    /*** Inicio "Home" ***/
+    /* Inicio "main-slider" (Home) */
+    .main-slider {
+        &__copy {
+            left: 50px;
+            bottom: 50px;
+            // width: 45%;
+        }
+    }
+    /* Fin "main-slider" (Home) */
+    /*** Fin "Home" ***/
 
     /*** Inicio "Servicios" (Serveis) ***/
     .main {

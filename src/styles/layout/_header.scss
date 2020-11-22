@@ -1,12 +1,26 @@
 .main-header {
-    background-color: pink;
+    // background-color: pink;
     border-bottom: 2px solid $gray-100;
     &__home {
         border-bottom: none;
-        nav {
-            position: absolute;
-            width: calc(100% - 100px);
+        nav.navbar {
+            // background-color: transparent;
+            height: 80px;
+            position: relative;
             z-index: 10;
+
+            // position: absolute;
+            // right: 0;
+            // left: 0;
+            // z-index: 10;
+            // width: calc(100% - 100px);
+        }
+        &__logo {
+            width: 30%;
+        }
+        &__icon {
+            width: 40px; /* Número mágico */
+            fill: $white;
         }
     }
     &__logo {
@@ -19,7 +33,7 @@
         fill: $blue;
     }
     nav {
-        background-color: lightblue;
+        // background-color: lightblue;
         height: 140px;
     }
 }

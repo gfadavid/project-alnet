@@ -1,8 +1,6 @@
 .main-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // height: 300px;
+    position: relative;
+    margin-top: -80px;
     &::before {
         content: '';
         display: block;
@@ -11,15 +9,18 @@
         background-color: rgba($black,.5);
         position: absolute;
     }
-    img {
-        min-height: 100vh;
-    }
     &__copy {
-        background-color: rgba(lightgreen,.75);
-        position: absolute;
-        left: 50px;
-        bottom: 50px;
-        width: 50%;
+        background-color: rgba($black,.75);
+        position: relative;
+        z-index: 10;
+        &__title {
+            // background-color: lightsalmon;
+        }
+        &__text {
+            // background-color: mediumvioletred;
+            color: $white;
+            font-weight: $font-weight-light;
+        }
     }
 }
 

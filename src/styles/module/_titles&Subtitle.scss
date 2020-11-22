@@ -1,7 +1,10 @@
 [class^="title--"] {
     font-family: $font-family-base;
-    font-size: $h1-font-size;
     font-weight: $font-weight-bolder;
+}
+
+.title--1 {
+    font-size: 34px;
     color: $blue;
 }
 
