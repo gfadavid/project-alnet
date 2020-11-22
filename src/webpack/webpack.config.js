@@ -103,6 +103,11 @@ module.exports = {
             template: './src/home-serveis.html',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'home-alnet.html', // Permite crear el archivo
+            template: './src/home-alnet.html',
+            minify: false
+        }),
         new MiniCSSExtractPlugin({
             filename: 'css/[name].css',
         })
