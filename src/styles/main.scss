@@ -15,18 +15,27 @@
 @import './module/projects';
 
 /* Hoja de estilos del sitio */
-.image::before {
-    content: '';
-    background-color: rgba($black, .65);
-    position: absolute;
-}
-
-.image__logo,
-.image::before {
-    // background-color: turquoise;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+.image {
+    &::before {
+        content: '';
+        background-color: rgba($black, .65);
+        position: absolute;
+        z-index: 10;
+    }
+    
+    &__logo,
+    &::before {
+        // background-color: turquoise;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        z-index: 20;
+    }
+    &__logo:hover {
+        transform: rotateY(360deg);
+        transition: all 1s;
+        opacity: .5;
+    }
 }
