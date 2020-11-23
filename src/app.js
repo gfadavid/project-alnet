@@ -24,6 +24,8 @@ import './static/img/img-nosotros-studio.jpg';
 // Categoría Interna
 import './static/img/img-media-1.jpg';
 import './static/img/img-media-2.jpg';
+import './static/img/img-media-1-studio.jpg';
+import './static/img/img-media-2-studio.jpg';
 import './static/svg/vineta.svg';
 
 // Contacto

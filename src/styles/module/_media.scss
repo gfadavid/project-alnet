@@ -16,6 +16,15 @@
             margin-bottom: 0;
             list-style: none;
             text-align: justify;
+            &.studio {
+                .media__description__list__item {
+                    svg {
+                        .st0 {
+                            fill: $orange;
+                        }
+                    }
+                }
+            }
             &__item {
                 // background-color: maroon;
                 position: relative;
@@ -30,9 +39,6 @@
                     .st1 {
                         fill: #444545;
                     }
-                }
-                &:nth-child(even) {
-                    // background-color: mediumseagreen;
                 }
             }
         }

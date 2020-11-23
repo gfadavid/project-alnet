@@ -16,3 +16,8 @@
         background-color: darken($orange, 10);
     }
 }
+
+.button--4 {
+    // @extend .button--2;
+    @extend .button--3;
+}

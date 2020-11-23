@@ -128,6 +128,11 @@ module.exports = {
             template: './src/contacto-studio.html',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'categoria-interna-studio.html', // Permite crear el archivo
+            template: './src/categoria-interna-studio.html',
+            minify: false
+        }),
         new MiniCSSExtractPlugin({
             filename: 'css/[name].css',
         })
