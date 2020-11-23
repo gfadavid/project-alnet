@@ -104,8 +104,13 @@ module.exports = {
             minify: false
         }),
         new HtmlWebpackPlugin({
-            filename: 'home-alnet.html', // Permite crear el archivo
-            template: './src/home-alnet.html',
+            filename: 'home-studio.html', // Permite crear el archivo
+            template: './src/home-studio.html',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'nosotros-studio.html', // Permite crear el archivo
+            template: './src/nosotros-studio.html',
             minify: false
         }),
         new MiniCSSExtractPlugin({
