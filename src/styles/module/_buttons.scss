@@ -8,3 +8,11 @@
 .button--2 {
     max-width: 250px;
 }
+
+.button--3 {
+    background-color: $orange;
+    border-color: $orange;
+    &:hover {
+        background-color: darken($orange, 10);
+    }
+}

@@ -6,4 +6,14 @@
     textarea {
         height: 112px; /* Sumatoria */
     }
+
+    &.studio {
+        input,
+        textarea {
+            &:focus {
+                color: $orange;
+                border-color: $orange;
+            }
+        }
+    }
 }
