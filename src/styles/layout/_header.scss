@@ -23,7 +23,8 @@
             fill: $white;
         }
     }
-    &__logo {
+    &__logo,
+    .main-header__home__logo {
         // background-color: tomato;
         width: 50%;
         &:hover {
