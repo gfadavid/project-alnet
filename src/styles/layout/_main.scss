@@ -31,6 +31,11 @@
 
 .values {
     // background-color: teal;
+    &.studio {
+        svg {
+            fill: $orange;
+        }
+    }
     &__item {
         // background-color: pink;
         svg {
