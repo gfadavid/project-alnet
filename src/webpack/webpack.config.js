@@ -113,6 +113,11 @@ module.exports = {
             template: './src/nosotros-studio.html',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'categoria-studio.html', // Permite crear el archivo
+            template: './src/categoria-studio.html',
+            minify: false
+        }),
         new MiniCSSExtractPlugin({
             filename: 'css/[name].css',
         })
