@@ -9,7 +9,8 @@
 
     &.studio {
         input,
-        textarea {
+        textarea,
+        select {
             &:focus {
                 color: $orange;
                 border-color: $orange;
