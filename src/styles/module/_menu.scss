@@ -1,0 +1,19 @@
+.menu {
+    opacity: .85;
+    background-color: $blue;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: $white;
+    .container-fluid {
+        background-color:rgba(darkorchid, .85);
+        height: 100%;
+    }
+    &__header {
+        background-color: darkturquoise;
+        height: 140px;
+        &__logo {
+            // width: 50%;
+        }
+    }
+}
