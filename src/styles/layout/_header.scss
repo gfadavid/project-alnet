@@ -3,28 +3,34 @@
     border-bottom: 2px solid $gray-100;
     &__home {
         border-bottom: none;
+        // background-color: darkmagenta;
         nav.navbar {
+            background-color: $black;
             // background-color: transparent;
-            height: 80px;
-            position: relative;
-            z-index: 10;
+            height: 60px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 20;
+            padding-right: 15px;
+            padding-left: 15px;
 
             // position: absolute;
-            // right: 0;
-            // left: 0;
             // z-index: 10;
             // width: calc(100% - 100px);
         }
-        &__logo {
-            width: 30%;
+        &__logo,
+        .main-header__logo {
+            width: 25%;
         }
-        &__icon {
-            width: 40px; /* Número mágico */
+        &__icon,
+        .main-header__icon {
+            width: 30px; /* Número mágico */
             fill: $white;
         }
     }
-    &__logo,
-    .main-header__home__logo {
+    &__logo {
         // background-color: tomato;
         width: 50%;
         &:hover {

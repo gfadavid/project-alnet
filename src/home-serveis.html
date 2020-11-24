@@ -15,7 +15,7 @@
 
         <article class="container-fluid">
             
-            <nav class="navbar navbar-light d-flex align-items-center">
+            <nav id="navbar-js" class="navbar navbar-light d-flex align-items-center">
     
                 <a href="index.html" class="navbar-brand">
                     <img src="./static/img/logo-alnet-serveis.png" alt="Logo de la marca Alnet Serveis" class="main-header__home__logo">
@@ -1074,6 +1074,13 @@
         </article>
 
     </footer>
-    
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+            var $nav = $("#navbar-js");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 </body>
 </html>

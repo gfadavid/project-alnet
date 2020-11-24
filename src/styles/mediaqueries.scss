@@ -21,22 +21,18 @@
         &__home {
             border-bottom: none;
             nav.navbar {
+                background-color: transparent;
                 height: 140px;
-                // position: absolute;
-                // right: 0;
-                // left: 0;
-                // z-index: 10;
-                // width: calc(100% - 100px);
+                &.scrolled {
+                    background-color: $black;
+                }
             }
             &__logo {
                 width: 50%;
             }
-        }
-        &__logo {
-        }
-        &__icon {
-        }
-        nav {
+            &__icon {
+                width: 40px;
+            }
         }
     }
     /*** Inicio "Header" ***/
@@ -54,7 +50,7 @@
     /*** Inicio "Home" ***/
     .home {
         &__background {
-            height: calc(100vh - 55px);
+            height: calc(100vh - 30px);
         }
     }
 
@@ -196,6 +192,17 @@
 /* Breakpoint Large */
 @media screen and (min-width: 62em) {
 
+    /*** Inicio "Header" ***/
+    .main-header {
+        &__home {
+            nav.navbar {
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+        }
+    }
+    /*** Inicio "Header" ***/
+
     /*** Inicio "body" ***/
     body,
     .wrapper {
@@ -278,7 +285,6 @@
         }
     }
     /*** Fin "footer" ***/
-
 
     /*** Inicio de Títulos & Subtítulos ***/
     .title--1 {
