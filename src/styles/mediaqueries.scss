@@ -170,16 +170,14 @@
     .main-footer {
         margin-top: auto;
         &__contact {
-            height: 100px;
-            padding-top: 0;
-            padding-bottom: 0;
+            min-height: 65px;
             &__item__text {
                 color: $gray-700;
                 margin-left: 10px;
             }
         }
         &__aboutus {
-            height: 55px;
+            height: 30px;
             padding-top: 0;
             padding-bottom: 0;
         }
@@ -271,6 +269,15 @@
         }
     }
     /*** Fin "Main-Slider" ***/
+
+    /*** Inicio "footer" ***/
+    .main-footer {
+        &__contact {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    /*** Fin "footer" ***/
 
 
     /*** Inicio de Títulos & Subtítulos ***/
