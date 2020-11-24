@@ -34,3 +34,6 @@ import './static/img/mapa.png';
 // Home
 import './static/img/main-slider-1.jpg';
 import './static/img/main-slider-1-studio.jpg';
+
+// Menú
+import './static/img/logo-menu.png';
