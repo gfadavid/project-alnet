@@ -134,7 +134,7 @@ module.exports = {
             minify: false
         }),
         new HtmlWebpackPlugin({
-            filename: 'categoria-serveis-b.html', // Permite crear el archivo
+            filename: 'proyecto-interna-studio.html', // Permite crear el archivo
             template: './src/proyecto-interna-studio.html',
             minify: false
         }),
