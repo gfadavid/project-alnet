@@ -73,11 +73,11 @@
 
 .request {
     background-color: $gray-200;
-    min-height: 370px;
+    min-height: 270px;
     &__home {
         @extend .request;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         .form {
             padding-bottom: 0;
         }
