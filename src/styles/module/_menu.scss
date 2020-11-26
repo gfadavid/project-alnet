@@ -6,6 +6,7 @@
     height: 100%;
     color: $white;
     padding-bottom: 40px;
+    z-index: 20;
     // overflow-y: auto;
     .container-fluid {
         // background-color:rgba(darkorchid, .85);
@@ -13,7 +14,7 @@
     }
     &__header {
         // background-color: darkturquoise;
-        height: 140px;
+        height: 100px;
         svg {
             width: 40px;
             fill: $white;

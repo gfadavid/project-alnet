@@ -3,8 +3,8 @@
     // background-color: lightcoral;
     flex-grow: 1;
     &__content {
-        // background-color: lightblue;
-        padding-top: 15px;
+        // background-color: pink;
+        padding-top: 80px;
         padding-bottom: 15px;
         // &__description {
         //     // background-color: lightgreen;
@@ -15,6 +15,13 @@
             // .st0 {
             //     fill: $gray-900;
             // }
+        }
+    }
+    @at-root {
+        .main-header__home + .main {
+            .main__content {
+                padding-top: 15px;
+            }
         }
     }
     &__text {
