@@ -1,13 +1,27 @@
 .main-slider {
     position: relative;
     margin-top: 60px;
-    &::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-color: rgba($black,.65);
-        position: absolute;
+    .slider {
+        margin-top: 0;
+        svg {
+            fill: $white;
+        }
+    }
+    .carousel-item {
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($black,.65);
+            position: absolute;
+        }
+    }
+    .carousel-control-prev {
+      left: 50px;
+    }
+    .carousel-control-next {
+      right: 50px;
     }
     &__copy {
         background-color: rgba($black,.75);
@@ -31,7 +45,7 @@
         right: 0;
         left: 0;
         z-index: 10;
-        margin-top: -30px;
+        bottom: 80px; /* Número mágico */
         &__item {
             // background-color: darkmagenta;
             height: 20px; /* Altura de los piconos */
