@@ -52,11 +52,60 @@
 }
 
 .slider {
-    background-color: $blue;
+    // background-color: $blue;
     color: $white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // height: 300px;
     margin-top: 20px;
+    img {
+        width: 100%;
+    }
+    svg {
+        fill: $orange;
+        font-weight: $font-weight-bolder;
+        height: 50px;
+    }
+    &__link {
+        // padding-top: 10px;
+        // padding-bottom: 10px;
+        // background-color: darksalmon;
+        position: relative;
+        &:nth-child(even) {
+            // background-color: darkred;
+            .slider__link__content {
+                // background-color: powderblue;
+            }
+        }
+        &__content {
+            background-color: rgba($black, .75);
+            position: absolute;
+            top: calc(100% - 80px);
+            right: 15px;
+            left: 15px;
+            text-align: center;
+            color: $white;
+            &:hover {
+                transition: all .5s;
+                top: 0;
+                max-height: 100%;
+                min-height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            &__title {
+                // background-color: slateblue;
+                height: 80px;
+                line-height: 80px;
+                font-size: 20px;
+                font-weight: $font-weight-bolder;
+            }
+            &__description {
+                // background-color: violet;
+            }
+        }
+    }
 }

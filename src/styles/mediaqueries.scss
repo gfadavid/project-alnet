@@ -16,6 +16,15 @@
 /* Breakpoint Medium */
 @media screen and (min-width: 48em) {
 
+    // Inicio Bootstrap
+    .carousel-control-prev {
+        left: -40px;
+      }
+    .carousel-control-next {
+    right: -40px;
+    }
+    // Fib Bootstrap
+
     /*** Inicio "Header" ***/
     .main-header {
         &__home {
@@ -270,7 +279,7 @@
             //     }
             // }
         }
-        &__text, {
+        &__text {
             font-size: 17px;
         }
     }

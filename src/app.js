@@ -21,6 +21,11 @@ import './static/img/img-1.jpg';
 import './static/img/cargadores.png';
 import './static/img/img-nosotros-studio.jpg';
 
+// Categoria (Studio)
+import './static/img/img-serv-01.jpg';
+import './static/img/img-serv-02.jpg';
+import './static/img/img-serv-03.jpg';
+
 // Categoría Interna
 import './static/img/img-media-1.jpg';
 import './static/img/img-media-2.jpg';
