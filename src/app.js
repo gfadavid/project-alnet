@@ -30,6 +30,8 @@ import './static/img/img-serv-03.jpg';
 import './static/img/img-proy-01.jpg';
 import './static/img/img-proy-02.jpg';
 import './static/img/img-proy-03.jpg';
+// Proyecto Interna
+import './static/img/img-proye-interna-01.jpg';
 
 // Categoría Interna
 import './static/img/img-media-1.jpg';
