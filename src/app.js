@@ -29,6 +29,10 @@ import './static/img/img-serv-03.jpg';
 // Categoría (Serveis)
 import './static/img/img-serv-serveis-1.jpg';
 import './static/img/img-serv-serveis-2.jpg';
+// Subcategoría
+import './static/img/img-sub-serveis-1.jpg';
+import './static/img/img-sub-serveis-2.jpg';
+import './static/img/img-sub-serveis-3.jpg';
 
 // Proyectos (Studio)
 import './static/img/img-proy-01.jpg';
