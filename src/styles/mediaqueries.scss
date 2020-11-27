@@ -19,7 +19,7 @@
     // Inicio Bootstrap
     .carousel-control-prev {
         left: -40px;
-      }
+    }
     .carousel-control-next {
     right: -40px;
     }
@@ -155,6 +155,13 @@
     /* Inicio "slider" */
     .slider {
         margin-top: 100px;
+        &__link {
+            &__content {
+                &__title {
+                    font-size: 24px;
+                }
+            }
+        }
     }
     /* Fin "slider" */
 

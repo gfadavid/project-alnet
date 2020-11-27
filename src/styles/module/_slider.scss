@@ -63,7 +63,8 @@
         width: 100%;
     }
     svg {
-        fill: $orange;
+        // fill: $orange;
+        fill: $gray-800;
         font-weight: $font-weight-bolder;
         height: 50px;
     }
@@ -98,13 +99,28 @@
             }
             &__title {
                 // background-color: slateblue;
+                max-width: 75%;
                 height: 80px;
-                line-height: 80px;
-                font-size: 20px;
+                // overflow-y: hidden;
+                margin-right: auto;
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 18px;
                 font-weight: $font-weight-bolder;
+                color: White;
             }
             &__description {
                 // background-color: violet;
+                font-size: 16px;
+                max-width: 75%;
+                svg {
+                    fill: $white;
+                    width: 15px;
+                    margin-left: 10px;
+                }
             }
         }
     }
