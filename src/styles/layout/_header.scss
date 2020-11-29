@@ -24,6 +24,10 @@
         }
         &__logo{
             width: 25%;
+            &:hover {
+                opacity: .25;
+                transition: all .3s;                
+            }
         }
         &__icon,
         .main-header__icon {

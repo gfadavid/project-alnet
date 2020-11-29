@@ -50,9 +50,9 @@
             // background-color: darkmagenta;
             height: 20px; /* Altura de los piconos */
             line-height: 1;
-            &:nth-child(even) {
-                // background-color: firebrick;
-            }
+            // &:nth-child(even) {
+            //     // background-color: firebrick;
+            // }
         }
         svg {
             width: 20px;
@@ -87,12 +87,12 @@
         // padding-bottom: 10px;
         // background-color: darksalmon;
         position: relative;
-        &:nth-child(even) {
-            // background-color: darkred;
-            .slider__link__content {
-                // background-color: powderblue;
-            }
-        }
+        // &:nth-child(even) {
+        //     // background-color: darkred;
+        //     // .slider__link__content {
+        //     //     // background-color: powderblue;
+        //     // }
+        // }
         &__content {
             background-color: rgba($black, .75);
             position: absolute;
