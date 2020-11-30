@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyA6VlFJsRChOpADu9EQoNt-XVpiaZZI7Ow"></script>
+</head>
+<body>
+    <div id="map" style="width: 100%; height: 100%;"></div>
+    <script type="text/javascript">
+        function initialize() {
+            var locations = [
+                //Item
+                ['<div style="width: 100%; max-width: 280px; line-height: 1.4; text-align: left; padding: .5em;"> <p style="padding-top: .5em; text-transform: uppercase; color: #970832;">Oficina Principal</p> <p style="font-size: .9em; padding-top: .5em; font-size: .9em;">Av. Javier Prado Oeste 757, Of. 1004 Edificio Skytower, Magdalena del Mar.</p> <p style="padding-top: .5em; font-size: .9em">Tel.: (01) 748-2600</p> <p style="padding-top: .5em; font-size: .9em">Email: info@legalex.pe</p> </div>', -12.0928180, -77.061418, 'marker.png']
+            ];
+            window.map = new google.maps.Map(document.getElementById('map'), {
+                mapTypeControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                /*maxZoom: 5*/
+            });
+            //styles
+            var styles = [{
+                stylers: [{
+                    hue: ""
+                }, {
+                    gamma: 0
+                }, {
+                    saturation: -100
+                }, {
+                    lightness: 0
+                }]
+            }];
+            map.setOptions({
+                styles: styles
+            });
+            /*Styles*/
+            var infowindow = new google.maps.InfoWindow();
+            var bounds = new google.maps.LatLngBounds();
+            for (i = 0; i < locations.length; i++) {
+                /*marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map
+                });*/
+                var icondefault = {
+                    url: "assets/img/marker.png", // url
+                    scaledSize: new google.maps.Size(60, 60), // scaled size
+                    origin: new google.maps.Point(0, 0), // origin
+                    anchor: new google.maps.Point(100, 60) // anchor
+                };
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map,
+                    icon: icondefault,
+                    icon: "assets/img/" + locations[i][3]
+                });
+                bounds.extend(marker.position);
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+                //Info de Marker Visible
+                google.maps.event.trigger(marker, 'click');
+            }
+            map.fitBounds(bounds);
+            var listener = google.maps.event.addListener(map, "idle", function() {
+                map.setZoom(17);
+                google.maps.event.removeListener(listener);
+            });
+        }
+        function loadScript() {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyA6VlFJsRChOpADu9EQoNt-XVpiaZZI7Ow&' + 'callback=initialize';
+            document.body.appendChild(script);
+        }
+        window.onload = loadScript;
+    </script>
+    <style type="text/css">
+        #map {
+            width: 100%;
+            height: 100%;
+            float: left;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</body>
+</html>

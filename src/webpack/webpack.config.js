@@ -8,7 +8,12 @@ module.exports = {
 
     output: {
         path: path.resolve(__dirname, '../../docs'), // La ruta que se va a generar
-        filename: 'js/bundle.js' // Nombre de archivo que va a generar
+        filename: 'js/bundle.js', // Nombre de archivo que va a generar
+        libraryTarget:'umd', 
+        library:'rstate',
+        umdNamedDefine: true,
+        libraryExport: 'default', 
+        globalObject: 'this' // Para los scripts
     },
 
     module: {
@@ -141,6 +146,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'categoria-serveis-b.html', // Permite crear el archivo
             template: './src/categoria-serveis-b.html',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'mapa.html', // Permite crear el archivo
+            template: './src/mapa.html',
             minify: false
         }),
         new MiniCSSExtractPlugin({

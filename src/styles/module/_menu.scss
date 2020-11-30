@@ -8,6 +8,9 @@
     padding-top: 30px;
     padding-bottom: 40px;
     z-index: 20;
+    &:not(.show) {
+        display: none;
+    }
     // overflow-y: auto;
     .container-fluid {
         // background-color:rgba(darkorchid, .85);

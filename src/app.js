@@ -57,3 +57,30 @@ import './static/img/main-slider-1-studio.jpg';
 
 // Menú
 import './static/img/logo-menu.png';
+
+// Script para el header
+
+
+//
+function ffWrapperScrollDown() {
+    //
+    let wrapper = document.querySelector('.navbar');
+    let scrollY = window.scrollY;
+    if (scrollY > 100) {
+      wrapper.classList.add('bg-scroll');
+    } else {
+      wrapper.classList.remove('bg-scroll');
+    }
+    //
+  }
+  window.addEventListener('load', ffWrapperScrollDown);
+  window.addEventListener('scroll', ffWrapperScrollDown);
+  //
+  
+  function closeMenu() {
+    let menu = document.querySelector('#navbarNav');
+    
+    menu.classList.remove('show');
+  }
+  
+  window.addEventListener('click', closeMenu);
