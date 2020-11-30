@@ -1,0 +1,35 @@
+.barskill {
+    // background-color: darkgreen;
+    margin-top: 15px;
+    &.serveis {
+        .barskill__item__bar {
+            background-color: $blue;
+        }
+    }
+    &__item {
+        // background-color: darksalmon;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding-bottom: 15px;
+        &:nth-child(even) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &__name {
+            // background-color: deeppink;
+        }
+        &__number {
+            // background-color: deepskyblue;
+            font-weight: $font-weight-bolder;
+        }
+        &__bar {
+            height: 5px;
+            background-color: $orange;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}

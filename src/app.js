@@ -18,7 +18,6 @@ import './static/img/logo-mk.png';
 
 // Nosotros
 import './static/img/img-1.jpg';
-import './static/img/cargadores.png';
 import './static/img/img-nosotros-studio.jpg';
 
 // Categoria (Studio)
