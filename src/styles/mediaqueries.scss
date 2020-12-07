@@ -56,6 +56,35 @@
     }
     /*** Inicio "Header" ***/
 
+    /*** Inicio Menú ***/
+    .menu {
+        padding-top: 0;
+        &__header {
+            &__logo {
+                width: 135px;
+            }
+        }
+        &__sections {
+            &__list {
+                &__item {
+                }
+                &__link {
+                }
+            }
+        }
+        &__footer {
+            &__address {
+                &__text {
+                }
+            }
+            &__contact {
+                &__text {
+                }
+            }
+        }
+    }
+    /*** Fin Menú ***/
+
     /*** Inicio "body" ***/
     body,
     .wrapper {

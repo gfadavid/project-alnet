@@ -1,0 +1,14 @@
+body {
+    &.serveis {
+        .main-slider .slider svg,
+        .slider svg {
+            fill: $blue;
+        }
+    }
+    &.studio {
+        .main-slider .slider svg,
+        .slider svg {
+            fill: $orange;
+        }
+    }
+}

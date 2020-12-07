@@ -11,10 +11,16 @@
 }
 
 .button--3 {
+    @extend .button--2;
     background-color: $orange;
     border-color: $orange;
-    &:hover {
-        background-color: darken($orange, 10);
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: darken($orange, 10) !important;
+    }
+    &:focus {
+        box-shadow: 0 0 .2rem rgba($orange, 0.5);
     }
 }
 
@@ -34,5 +40,8 @@
     justify-content: center;
     &:hover {
         color: $white;
+    }
+    & + svg {
+        fill: $white !important;
     }
 }

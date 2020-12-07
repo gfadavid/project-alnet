@@ -3,9 +3,6 @@
     margin-top: 60px;
     .slider {
         margin-top: 0;
-        svg {
-            fill: $white;
-        }
     }
     .carousel-item {
         &::before {
@@ -78,7 +75,7 @@
     }
     svg {
         // fill: $orange;
-        fill: $gray-800;
+        // fill: $gray-800;
         font-weight: $font-weight-bolder;
         height: 50px;
     }
